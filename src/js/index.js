@@ -614,7 +614,7 @@ function irParaTelaFinal() {
     }, 500);
 }
 
-const reiniciar = document.getElementById('botao-reiniciar');
+/* const reiniciar = document.getElementById('botao-reiniciar');
 
 reiniciar.addEventListener('click', () => {
     posicao = { linha: 6, coluna: 0 };
@@ -628,4 +628,4 @@ reiniciar.addEventListener('click', () => {
     // Troca as telas de volta
     document.getElementById('tela-final').classList.add('escondido');
     document.getElementById('tela-jogo').classList.remove('escondido');
-});
+}); */
