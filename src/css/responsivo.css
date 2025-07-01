@@ -7,7 +7,7 @@ body {
 }
 
 /* Regras para dispositivos com largura até 480px (celulares) */
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
     body {
         background-size: contain;
         justify-content: flex-start;
@@ -29,8 +29,10 @@ body {
 
     .under-jogo {
         width: 100%;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        /* fui eu que testei o display flex aqui e o row ok */
     }
 
     #tela-inicial {
@@ -59,5 +61,23 @@ body {
         flex-direction: column;
         justify-content: space-between;
         overflow-x: auto;
+    }
+}
+@media (max-width: 900px) and (orientation: landscape) {
+    body {
+        background-size: cover;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    .under-jogo {
+        flex-direction: row;
+        position: static;
+        justify-content: center;
+    }
+
+    #tabuleiro {
+        width: 80vw;
+        max-width: 100%;
     }
 }
