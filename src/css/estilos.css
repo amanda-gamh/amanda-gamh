@@ -1,11 +1,11 @@
-/* html, body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
 }
- */
+/ * testando com essa configuração do html e body sei la */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-image: url('../img/bg-01-manhã.jpg');
@@ -164,7 +164,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
-  min-width: 560px; /* usando isso para testar, posso tbm rever o valor */
+  min-width: 560px; /* usando isso para testar, nao funcionou ficou mais a esquerda ainda*/
   /* display: flex;
   align-items: center; 
   justify-content: center;
@@ -173,9 +173,11 @@ body {
 
 #tela-jogo {
   display: flex;
-  flex-direction: row;
-  /* nao tinha isso antes */
-  justify-content: center;
+  flex-direction: column; /* testando isso p ajeitar o under-jogo */
+/*   flex-direction: row; */
+/*   justify-content: center; tambem tirei para testar o under jogo, e o min height tb por isso */
+  min-height: 100vh;
+  justify-content: space-between;
   align-items: center;
   gap: 0.4rem;
   /* gap: 2rem; */
