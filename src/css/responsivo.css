@@ -1,0 +1,27 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100dvh;
+}
+
+@media (max-width: 480px) {
+    #tela-inicial {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #tela-inicial h1 {
+        font-size: 1.5rem;
+    }
+
+    #tela-inicial p {
+        font-size: 1rem;
+    }
+
+    .botao-comecar {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+}
