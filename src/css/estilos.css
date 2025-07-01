@@ -164,7 +164,8 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
-  min-width: 560px; /* usando isso para testar, nao funcionou ficou mais a esquerda ainda*/
+  min-width: 500px; /* usando isso para testar, nao funcionou ficou mais a esquerda ainda*/
+  align-items: center;
   /* display: flex;
   align-items: center; 
   justify-content: center;
@@ -313,7 +314,7 @@ body {
 }
 
 .under-jogo {
-  position: fixed;
+/*   position: fixed; voltei com relative, ver */
   bottom: 0;
   left: 0; /* acrescentei esses tres parametros ai de position p testar */
   display: flex;
@@ -325,7 +326,7 @@ body {
   min-width: 480px;
   margin: 10px 10px;
   padding: 10px;
-/*   position: relative; */
+  position: relative;
 }
 
 .avisos {
