@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+  overflow: auto; /* estou testando isso ok */
 }
 
 .header {
@@ -163,6 +164,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+  min-width: 560px; /* usando isso para testar, posso tbm rever o valor */
   /* display: flex;
   align-items: center; 
   justify-content: center;
@@ -182,6 +184,7 @@ body {
   height: 100vh;
   padding: 1rem;
   box-sizing: border-box;
+  overflow-x: auto; /* coloquei aqui para testar */
 }
 
 .jogo__controles {
@@ -213,6 +216,7 @@ body {
   grid-template-rows: repeat(7, 1fr);
   gap: 0.1rem;
   background-color: white;
+  margin-bottom: 80px; /*acrescentei isso p testar */
   /* gap: 0.3rem; */
   /* background-color: #fff;
   border: 2px solid #555;
@@ -307,6 +311,9 @@ body {
 }
 
 .under-jogo {
+  position: fixed;
+  bottom: 0;
+  left: 0; /* acrescentei esses tres parametros ai de position p testar */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,7 +323,7 @@ body {
   min-width: 480px;
   margin: 10px 10px;
   padding: 10px;
-  position: relative;
+/*   position: relative; */
 }
 
 .avisos {
