@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+/* Regras para dispositivos com largura até 480px (celulares) */
+@media (max-width: 480px) {
+    body {
+        background-size: contain;
+        justify-content: flex-start;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #tela-inicial,
+    #tela-jogo,
+    #tela-final {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #tabuleiro {
+        width: 90vw;
+        max-width: 100%;
+    }
+
+    .under-jogo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tela-inicial {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #tela-inicial h1 {
+        font-size: 1.5rem;
+    }
+
+    #tela-inicial p {
+        font-size: 1rem;
+    }
+
+    .botao-comecar {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .layout-principal-jogo {
+        min-width: 500px;
+    }
+
+    #tela-jogo {
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-x: auto;
+    }
+}
