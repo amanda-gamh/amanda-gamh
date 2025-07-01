@@ -316,7 +316,7 @@ body {
 .under-jogo {
 /*   position: fixed; voltei com relative, ver */
   bottom: 0;
-  left: 0; /* acrescentei esses tres parametros ai de position p testar */
+/* left: 0; acrescentei esses tres parametros ai de position p testar */
   display: flex;
   justify-content: center;
   align-items: center;
